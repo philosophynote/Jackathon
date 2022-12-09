@@ -9,6 +9,9 @@ import streamlit as st
 # interact with FastAPI endpoint
 backend = "http://fastapi:8000/segmentation"
 
+def testrequest():
+    res = requests.get(f'{backend}/helloworld')
+    return res.body
 
 def process(image, server_url: str):
 
@@ -32,7 +35,13 @@ st.write(
 
 input_image = st.file_uploader("insert image")  # image upload widget
 
-if st.button("Get segmentation map"):
+st.button("テスト")
+if st.button("テスト"):
+    tmp = testrequest()
+    st.write(tmp)
+    
+
+if st.button("Get segmentation map a"):
 
     col1, col2 = st.columns(2)
 

@@ -1,3 +1,7 @@
 .ipynb_checkpoints
 .env
 chromedriver
+
+app/python/__pycache__
+app/python/machine_learning/__pycache__
+app/python/machine_learning/data/*

@@ -14,6 +14,9 @@ app = FastAPI(
     version="0.1.0",
 )
 
+@app.get("/helloworld")
+def return_hello_world():
+    return {"Hello": "World"}
 
 @app.post("/segmentation")
 def get_segmentation_map(file: bytes = File(...)):
