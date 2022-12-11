@@ -2,6 +2,7 @@
 .env
 chromedriver
 
-app/python/__pycache__
-app/python/machine_learning/__pycache__
-app/python/machine_learning/data/*
+app/backend/__pycache__
+app/backend/machine_learning/__pycache__
+app/backend/machine_learning/data/*
+model/data
